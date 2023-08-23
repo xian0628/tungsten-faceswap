@@ -39,7 +39,7 @@ Download weights:
 tungsten build . faceswap:myversion
 ```
 
-### Stel 3 (Optional) Test locally
+### Step 2.1 (Optional). Test locally
 
 ```bash
 tungsten demo
