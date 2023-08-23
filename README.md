@@ -6,6 +6,7 @@ Take a video and replace the face in it with a face of your choice. You only nee
 - Video clips
 - [Python 3.9](https://www.python.org/downloads/release/python-3913/)
 - [Docker](https://docs.docker.com/get-docker/)
+- (Optional) [nvidia-docker](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#docker) for locally testing the model.
 
 
 ## Prepare video clips
@@ -26,6 +27,7 @@ pip install -r requirements.txt
 ```
 
 ### Step 1. Prepare weights
+
 Download weights:
 ```
 ./download_weights.sh
@@ -35,6 +37,12 @@ Download weights:
 
 ```bash
 tungsten build . faceswap:myversion
+```
+
+### Stel 3 (Optional) Test locally
+
+```bash
+tungsten demo
 ```
 
 ### Step 3: Create a project on Tungsten
