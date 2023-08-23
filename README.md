@@ -40,7 +40,11 @@ tungsten build . faceswap:myversion
 ```
 
 ### Step 2.1 (Optional). Test locally
-
+Make sure that `nvidia-docker` is installed:
+```bash
+docker run --rm --gpus all ubuntu:22.04 nvidia-smi
+```
+Then,
 ```bash
 tungsten demo
 ```
